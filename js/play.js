@@ -61,8 +61,13 @@ play.init = function (){
 	
 	
 	com.get("regretBn").addEventListener("click", function(e) {
-		play.regret();
+		
+		if(confirm("让你悔棋")) {
+			play.regret();
+		};
+		
 	})
+
 	
 	/*
 	var initTime = new Date().getTime();
